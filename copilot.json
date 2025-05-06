@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "project": "Computer Wisdom",
+  "settings": {
+    "copilot": {
+      "enabled": true,
+      "suggestions": {
+        "code": true,
+        "documentation": true,
+        "refactoring": false,
+        "governance_model": true
+      },
+      "feedback": {
+        "suggestions_based_on_project_goals": true,
+        "avoid_autocompletion_errors": true,
+        "ethical_guardrails": {
+          "enabled": true,
+          "apply_to_governance_suggestions": true
+        }
+      },
+      "comments": {
+        "clarifying_feedback": true,
+        "verbose_code_explanation": false
+      }
+    },
+    "workflow": {
+      "auto_commit": false,
+      "auto_push": false,
+      "manual_approval_required": true,
+      "integration_with_ci_cd": true
+    },
+    "audit_trail": {
+      "enabled": true,
+      "log_changes": true,
+      "log_commit_messages": true
+    }
+  }
+}
